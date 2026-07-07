@@ -1,0 +1,1601 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gospoda Spiżarnia w Kratę – Swołowo · Ekologiczna Kuchnia Pomorska</title>
+  <meta name="description" content="Gospoda Spiżarnia w Kratę w Swołowie. Ekologiczna, sezonowa kuchnia przy Muzeum Kultury Ludowej Pomorza. Wt–Nd 12:00–18:00. Tel: 514 461 238" />
+  <link rel="icon" type="image/jpeg" href="https://i.ibb.co/C3L6dHfp/351206647-658458582771760-8748986535291365621-n.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=IM+Fell+English:ital,wght@0,400;1,400&family=Lato:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --gingham-red: rgba(196, 30, 30, 0.35);
+      --dark: #000000;
+      --dark-warm: #1A1A0E;
+      --mid: #4A4A3A;
+      --muted: #7A7A6A;
+      --red: #C41E1E;
+      --red-dark: #8C1010;
+      --page: #E9E9DD;
+      --surface: #F4F4EC;
+      --surface-warm: #FAFAE8;
+      --border: #C8C8B8;
+      --white: #FAFAE8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--page);
+      color: var(--dark-warm);
+      font-family: 'Lato', sans-serif;
+      line-height: 1.76;
+      -webkit-font-smoothing: antialiased;
+      scroll-behavior: smooth;
+    }
+
+    /* Gingham CSS Repeating Patterns */
+    .gingham-pattern {
+      background-color: #FFFFFF;
+      background-image:
+        repeating-linear-gradient(0deg, var(--gingham-red) 0px, var(--gingham-red) 16px, transparent 16px, transparent 32px),
+        repeating-linear-gradient(90deg, var(--gingham-red) 0px, var(--gingham-red) 16px, transparent 16px, transparent 32px);
+    }
+
+    .gingham-dark {
+      background-color: #1A0000;
+      background-image:
+        repeating-linear-gradient(0deg, rgba(196, 30, 30, 0.5) 0px, rgba(196, 30, 30, 0.5) 16px, transparent 16px, transparent 32px),
+        repeating-linear-gradient(90deg, rgba(196, 30, 30, 0.5) 0px, rgba(196, 30, 30, 0.5) 16px, transparent 16px, transparent 32px);
+    }
+
+    .gingham-corner {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background-image:
+        repeating-linear-gradient(0deg, rgba(196, 30, 30, 0.5) 0px, rgba(196, 30, 30, 0.5) 6px, transparent 6px, transparent 12px),
+        repeating-linear-gradient(90deg, rgba(196, 30, 30, 0.5) 0px, rgba(196, 30, 30, 0.5) 6px, transparent 6px, transparent 12px);
+      background-color: white;
+      flex-shrink: 0;
+    }
+
+    /* Gingham decorative frame */
+    .gingham-frame {
+      border: 8px solid transparent;
+      border-image: repeating-linear-gradient(45deg, var(--red) 0px, var(--red) 8px, white 8px, white 16px) 8;
+      padding: 6px;
+      background-color: var(--surface-warm);
+    }
+
+    /* Gingham Band separator */
+    .gingham-band {
+      width: 100%;
+      height: 48px;
+      border-top: 2px solid white;
+      border-bottom: 2px solid white;
+    }
+
+    /* Typography */
+    h1 {
+      font-family: 'IM Fell English', serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: clamp(2.8rem, 7vw, 5.5rem);
+      letter-spacing: 0.01em;
+      line-height: 0.95;
+    }
+
+    h2 {
+      font-family: 'IM Fell English', serif;
+      font-weight: 400;
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      letter-spacing: 0.01em;
+      line-height: 1.1;
+      margin-bottom: 8px;
+    }
+
+    .font-wkrate {
+      font-family: 'Caveat', cursive;
+      font-weight: 600;
+      color: var(--red);
+    }
+
+    .section-label {
+      font-family: 'Lato', sans-serif;
+      font-weight: 600;
+      font-size: 0.72rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--red);
+      display: block;
+      text-align: center;
+      margin-bottom: 6px;
+    }
+
+    /* Ornamental Divider */
+    .ornamental-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin: 14px 0;
+    }
+
+    .divider-line {
+      width: 70px;
+      height: 1px;
+      background-color: rgba(196, 30, 30, 0.4);
+    }
+
+    .divider-star {
+      color: rgba(196, 30, 30, 0.8);
+      font-size: 0.9rem;
+      line-height: 1;
+    }
+
+    /* Layout & Utilities */
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 88px 24px;
+      box-sizing: border-box;
+    }
+
+    .border-divider {
+      border-bottom: 1px solid var(--border);
+    }
+
+    a {
+      transition: all 0.2s ease;
+    }
+
+    /* Navigation */
+    .nav-bar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: var(--dark);
+      border-bottom: 4px solid transparent;
+      border-image: repeating-linear-gradient(90deg, var(--red) 0px, var(--red) 16px, white 16px, white 32px) 4;
+    }
+
+    .nav-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: border-box;
+    }
+
+    .nav-logo-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .nav-logo-img {
+      width: 36px;
+      height: 36px;
+      border-radius: 2px;
+      object-fit: cover;
+    }
+
+    .nav-wordmark {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .wordmark-gospoda {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      color: var(--page);
+      text-transform: uppercase;
+    }
+
+    .wordmark-spizarnia {
+      font-family: 'IM Fell English', serif;
+      font-weight: 400;
+      font-size: 1.1rem;
+      color: var(--page);
+    }
+
+    .wordmark-wkrate {
+      font-family: 'Caveat', cursive;
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: var(--red);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .nav-link {
+      font-family: 'Lato', sans-serif;
+      font-weight: 500;
+      font-size: 0.85rem;
+      letter-spacing: 0.08em;
+      color: rgba(233, 233, 221, 0.65);
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .nav-link:hover {
+      color: var(--page);
+    }
+
+    .nav-btn-reserve {
+      border: 2px solid var(--red);
+      font-family: 'Lato', sans-serif;
+      font-weight: 600;
+      color: var(--red);
+      padding: 8px 18px;
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 9999px;
+    }
+
+    .nav-btn-reserve:hover {
+      background-color: var(--red);
+      color: var(--surface-warm);
+    }
+
+    .nav-cb {
+      display: none;
+    }
+
+    .nav-burger {
+      display: none;
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: var(--page);
+      user-select: none;
+      z-index: 1001;
+    }
+
+    .nav-burger::before {
+      content: "≡";
+    }
+
+    /* Hero Section */
+    .hero {
+      min-height: 100vh;
+      background-image: linear-gradient(to bottom, rgba(0,0,0,0.40) 0%, rgba(0,0,0,0.65) 55%, rgba(0,0,0,0.97) 100%), url('https://i.ibb.co/kgV6tpWV/476157172-510152615427172-8121506165241514641-n.jpg');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .hero-content {
+      width: 100%;
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 max(24px, 6vw) max(80px, 10vh);
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    .hero-label {
+      font-family: 'Lato', sans-serif;
+      font-weight: 600;
+      color: var(--page);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+    }
+
+    .hero-divider {
+      margin: 14px 0;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .hero-divider-line {
+      width: 70px;
+      height: 1px;
+      background-color: rgba(196, 30, 30, 0.7);
+    }
+
+    .hero-divider-star {
+      color: rgba(196, 30, 30, 0.9);
+      font-size: 0.9rem;
+    }
+
+    .hero-title-block {
+      border-left: 8px solid transparent;
+      border-image: repeating-linear-gradient(180deg, var(--red) 0px, var(--red) 8px, white 8px, white 16px) 8;
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    .hero-title-gospoda {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      color: var(--page);
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      line-height: 1.1;
+    }
+
+    .hero-title-spizarnia {
+      color: var(--surface-warm);
+      line-height: 0.95;
+    }
+
+    .hero-title-wkrate {
+      display: block;
+      font-family: 'Caveat', cursive;
+      font-weight: 600;
+      color: var(--red);
+      font-size: clamp(2rem, 5vw, 4.5rem);
+      line-height: 1;
+    }
+
+    .hero-desc {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      color: rgba(233, 233, 221, 0.65);
+      font-size: 1.05rem;
+      max-width: 480px;
+      line-height: 1.6;
+    }
+
+    .hero-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .hero-chip {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 6px 14px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
+      color: rgba(233, 233, 221, 0.85);
+      font-size: 0.82rem;
+      border-radius: 2px;
+    }
+
+    .hero-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-top: 28px;
+    }
+
+    .hero-link-primary {
+      font-family: 'Lato', sans-serif;
+      font-weight: 600;
+      color: var(--red);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .hero-link-primary:hover {
+      color: var(--page);
+    }
+
+    .hero-link-secondary {
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
+      color: rgba(233, 233, 221, 0.35);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .hero-link-secondary:hover {
+      color: rgba(233, 233, 221, 0.65);
+    }
+
+    .hero-vertical-text {
+      position: absolute;
+      top: 80px;
+      right: max(24px, 4vw);
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.08);
+      font-size: 0.7rem;
+      letter-spacing: 0.25em;
+      white-space: nowrap;
+      pointer-events: none;
+    }
+
+    /* About Section */
+    .about-section {
+      background-color: var(--surface-warm);
+    }
+
+    .about-columns {
+      display: flex;
+      gap: 72px;
+      align-items: flex-start;
+      margin-top: 40px;
+    }
+
+    .about-left {
+      flex: 55%;
+    }
+
+    .about-right {
+      flex: 45%;
+    }
+
+    .about-h2 {
+      color: var(--dark);
+      margin-bottom: 8px;
+    }
+
+    .about-red-rule {
+      width: 56px;
+      height: 3px;
+      background-color: var(--red);
+      margin: 14px 0 24px 0;
+    }
+
+    .about-body {
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
+      font-size: 1rem;
+      color: var(--mid);
+      margin-bottom: 24px;
+    }
+
+    .about-features {
+      margin-top: 32px;
+    }
+
+    .feature-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border);
+      padding: 14px 0;
+      gap: 16px;
+    }
+
+    .feature-row:last-child {
+      border-bottom: none;
+    }
+
+    .feature-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .feature-title {
+      font-family: 'Lato', sans-serif;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--dark);
+    }
+
+    .feature-desc {
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
+      font-size: 0.9rem;
+      color: var(--muted);
+      text-align: right;
+    }
+
+    .owners-caption {
+      background-color: var(--dark);
+      padding: 16px 20px;
+      text-align: center;
+      margin-top: 12px;
+    }
+
+    .caption-title {
+      font-family: 'Caveat', cursive;
+      font-weight: 600;
+      color: var(--page);
+      font-size: 1.05rem;
+      margin-bottom: 4px;
+    }
+
+    .caption-subtitle {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      color: rgba(233, 233, 221, 0.5);
+      font-size: 0.82rem;
+    }
+
+    /* Offer Section */
+    .offer-section {
+      background-color: var(--page);
+    }
+
+    .offer-h2 {
+      text-align: center;
+      color: var(--dark);
+    }
+
+    .offer-tagline {
+      font-family: 'Caveat', cursive;
+      font-weight: 400;
+      color: var(--red);
+      font-size: 1.6rem;
+      text-align: center;
+      margin-top: -4px;
+      margin-bottom: 40px;
+    }
+
+    .offer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+    }
+
+    .offer-card {
+      background-color: var(--surface-warm);
+      border: 1px solid var(--border);
+      border-top: 4px solid var(--red);
+      padding: 28px 24px;
+      border-radius: 2px;
+      position: relative;
+    }
+
+    .offer-card:hover {
+      background-color: #FFFFFF;
+      border-top-color: var(--red-dark);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+
+    .offer-card-corner {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .offer-icon {
+      font-size: 1.8rem;
+      display: block;
+      margin-bottom: 12px;
+    }
+
+    .offer-title {
+      font-family: 'IM Fell English', serif;
+      color: var(--dark);
+      font-size: 1.05rem;
+      font-weight: 400;
+      margin-bottom: 8px;
+    }
+
+    .offer-desc {
+      font-family: 'Lato', sans-serif;
+      color: var(--muted);
+      font-size: 0.875rem;
+      line-height: 1.65;
+    }
+
+    /* Gallery Section */
+    .gallery-section {
+      background-color: var(--dark);
+    }
+
+    .gallery-h2 {
+      text-align: center;
+      color: var(--surface-warm);
+      font-style: italic;
+    }
+
+    .gallery-tagline {
+      font-family: 'Caveat', cursive;
+      font-weight: 400;
+      color: rgba(233, 233, 221, 0.5);
+      font-size: 1.4rem;
+      text-align: center;
+      margin-top: -4px;
+      margin-bottom: 40px;
+    }
+
+    .gallery-cb {
+      display: none;
+    }
+
+    .gallery-grid {
+      columns: 3;
+      column-gap: 8px;
+      width: 100%;
+    }
+
+    .gallery-item {
+      margin-bottom: 8px;
+      break-inside: avoid;
+      width: 100%;
+      display: block;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 2px;
+      transition: all 0.2s ease;
+    }
+
+    .gallery-item img:hover {
+      opacity: 0.85;
+      outline: 3px solid var(--red);
+      outline-offset: -3px;
+      transform: scale(1.02);
+    }
+
+    .gallery-extra {
+      display: none;
+    }
+
+    .gallery-cb:checked ~ .gallery-grid .gallery-extra {
+      display: block;
+    }
+
+    .gallery-toggle {
+      border: 2px solid rgba(196, 30, 30, 0.5);
+      font-family: 'Lato', sans-serif;
+      font-weight: 500;
+      color: var(--page);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 10px 28px;
+      margin: 24px auto 0 auto;
+      display: block;
+      width: fit-content;
+      cursor: pointer;
+      text-align: center;
+      border-radius: 2px;
+      user-select: none;
+    }
+
+    .gallery-toggle:hover {
+      border-color: var(--red);
+      color: var(--red);
+    }
+
+    .toggle-less {
+      display: none;
+    }
+
+    .gallery-cb:checked ~ .gallery-toggle .toggle-more {
+      display: none;
+    }
+
+    .gallery-cb:checked ~ .gallery-toggle .toggle-less {
+      display: block;
+    }
+
+    /* Reviews Section */
+    .reviews-section {
+      background-color: var(--surface-warm);
+    }
+
+    .reviews-h2 {
+      text-align: center;
+      color: var(--dark);
+      margin-bottom: 40px;
+    }
+
+    .reviews-grid {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 0;
+      margin-bottom: 40px;
+    }
+
+    .review-card {
+      flex: 1;
+      padding: 0 24px;
+      border-left: 1px solid var(--border);
+      position: relative;
+    }
+
+    .review-card:first-child {
+      border-left: none;
+      padding-left: 0;
+    }
+
+    .review-card:last-child {
+      padding-right: 0;
+    }
+
+    .review-gingham-corner {
+      position: absolute;
+      top: -12px;
+      left: 24px;
+    }
+
+    .review-card:first-child .review-gingham-corner {
+      left: 0;
+    }
+
+    .review-quote-mark {
+      font-family: 'IM Fell English', serif;
+      color: rgba(196, 30, 30, 0.12);
+      font-size: 5.5rem;
+      line-height: 0.7;
+      display: block;
+      margin-bottom: 8px;
+      user-select: none;
+    }
+
+    .review-quote {
+      font-family: 'IM Fell English', serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: var(--dark-warm);
+    }
+
+    .review-divider {
+      width: 40px;
+      height: 1px;
+      background-color: var(--border);
+      margin: 14px 0;
+    }
+
+    .review-stars {
+      font-family: 'Lato', sans-serif;
+      font-weight: 500;
+      color: var(--red);
+      font-size: 0.85rem;
+      letter-spacing: 0.1em;
+      margin-bottom: 4px;
+    }
+
+    .review-author {
+      font-family: 'Caveat', cursive;
+      font-weight: 400;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .reviews-more {
+      font-family: 'Lato', sans-serif;
+      font-weight: 500;
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--red);
+      text-align: center;
+      display: block;
+      text-decoration: none;
+    }
+
+    .reviews-more:hover {
+      color: var(--red-dark);
+    }
+
+    /* Hours Section */
+    .hours-section {
+      background-color: var(--dark);
+      position: relative;
+    }
+
+    .hours-h2 {
+      text-align: center;
+      color: var(--surface-warm);
+      font-style: italic;
+    }
+
+    .hours-tagline {
+      font-family: 'Caveat', cursive;
+      font-weight: 400;
+      color: var(--red);
+      font-size: 1.5rem;
+      text-align: center;
+      margin-top: -4px;
+    }
+
+    .hours-schedule {
+      max-width: 480px;
+      margin: 40px auto 24px auto;
+      border: 1px solid rgba(196, 30, 30, 0.3);
+      background: rgba(233, 233, 221, 0.04);
+    }
+
+    .hours-header {
+      background-color: var(--red);
+      padding: 14px 28px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 600;
+      color: var(--surface-warm);
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+    }
+
+    .hours-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 13px 28px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .hours-row:last-child {
+      border-bottom: none;
+    }
+
+    .hours-day {
+      font-family: 'Lato', sans-serif;
+      font-weight: 500;
+      color: var(--page);
+    }
+
+    .hours-time {
+      font-family: 'Lato', sans-serif;
+      font-weight: 600;
+      color: var(--red);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .hours-closed {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .closed-text {
+      color: rgba(233, 233, 221, 0.3);
+      font-weight: 400;
+    }
+
+    .hours-note {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-style: italic;
+      font-size: 0.88rem;
+      color: rgba(233, 233, 221, 0.4);
+      text-align: center;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      background-color: var(--page);
+    }
+
+    .contact-h2 {
+      text-align: center;
+      color: var(--dark);
+    }
+
+    .contact-columns {
+      display: flex;
+      gap: 64px;
+      margin-top: 40px;
+    }
+
+    .contact-left {
+      flex: 50%;
+    }
+
+    .contact-right {
+      flex: 50%;
+    }
+
+    .contact-body {
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
+      font-size: 1rem;
+      color: var(--mid);
+      margin-bottom: 24px;
+    }
+
+    .contact-rows {
+      margin-top: 28px;
+    }
+
+    .contact-row {
+      border-bottom: 1px solid var(--border);
+      padding: 18px 0;
+    }
+
+    .contact-row:last-child {
+      border-bottom: none;
+    }
+
+    .contact-label {
+      font-family: 'Lato', sans-serif;
+      font-weight: 500;
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .contact-value {
+      font-family: 'IM Fell English', serif;
+      font-weight: 400;
+      font-size: 1.05rem;
+      color: var(--dark);
+    }
+
+    .font-lato-val {
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
+      color: var(--mid);
+    }
+
+    .contact-phone-link {
+      color: var(--dark);
+      text-decoration: none;
+    }
+
+    .contact-phone-link:hover {
+      color: var(--red);
+    }
+
+    .contact-email-link {
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
+      color: var(--mid);
+      text-decoration: none;
+    }
+
+    .contact-email-link:hover {
+      color: var(--red);
+    }
+
+    .contact-social-link {
+      font-family: 'Lato', sans-serif;
+      font-weight: 500;
+      color: var(--red);
+      text-decoration: none;
+    }
+
+    .contact-social-link:hover {
+      color: var(--red-dark);
+    }
+
+    .contact-buttons {
+      margin-top: 24px;
+    }
+
+    .btn-cta-black {
+      display: block;
+      width: 100%;
+      background-color: var(--dark);
+      color: var(--surface-warm);
+      font-family: 'Lato', sans-serif;
+      font-weight: 600;
+      text-align: center;
+      padding: 14px 32px;
+      border-radius: 2px;
+      text-decoration: none;
+      box-sizing: border-box;
+      border: none;
+      margin-bottom: 10px;
+    }
+
+    .btn-cta-black:hover {
+      background-color: var(--dark-warm);
+      box-shadow: 4px 4px 0 var(--red);
+    }
+
+    .btn-cta-red {
+      display: block;
+      width: 100%;
+      border: 2px solid var(--red);
+      color: var(--red);
+      font-family: 'Lato', sans-serif;
+      font-weight: 500;
+      text-align: center;
+      padding: 12px 32px;
+      border-radius: 2px;
+      text-decoration: none;
+      box-sizing: border-box;
+    }
+
+    .btn-cta-red:hover {
+      background-color: var(--red);
+      color: var(--surface-warm);
+    }
+
+    /* Maps frame styling */
+    .map-frame {
+      height: 380px;
+      border: 3px solid var(--dark);
+      border-radius: 2px;
+      position: relative;
+      padding: 4px;
+      background-color: var(--dark);
+      outline: 3px solid var(--red);
+      outline-offset: 4px;
+    }
+
+    .map-frame iframe {
+      width: 100%;
+      height: 100%;
+      display: block;
+      border: 0;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: var(--dark);
+      padding: 32px 0;
+      text-align: center;
+    }
+
+    .footer-logo {
+      width: 36px;
+      height: 36px;
+      border-radius: 2px;
+      object-fit: cover;
+      margin: 0 auto 12px auto;
+      display: block;
+    }
+
+    .footer-spizarnia {
+      font-family: 'IM Fell English', serif;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 1.4rem;
+      color: var(--surface-warm);
+      line-height: 1.1;
+    }
+
+    .footer-wkrate {
+      font-family: 'Caveat', cursive;
+      font-weight: 600;
+      color: var(--red);
+      font-size: 1.2rem;
+    }
+
+    .footer-info {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      color: rgba(233, 233, 221, 0.3);
+      font-size: 0.78rem;
+    }
+
+    .footer-copyright {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      color: rgba(233, 233, 221, 0.15);
+      font-size: 0.72rem;
+      margin-top: 8px;
+    }
+
+    /* Responsive Media Queries */
+    @media (max-width: 768px) {
+      .nav-burger {
+        display: block;
+      }
+
+      .nav-links {
+        display: flex;
+        position: fixed;
+        inset: 0;
+        background-color: var(--dark);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        z-index: 999;
+        padding: 40px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-20px);
+        transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1), transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.35s;
+      }
+
+      .nav-links .nav-link {
+        opacity: 0;
+        transform: translateY(15px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+      }
+
+      .nav-cb:checked ~ .nav-bar .nav-links {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+
+      .nav-cb:checked ~ .nav-bar .nav-links .nav-link {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .nav-cb:checked ~ .nav-bar .nav-links .nav-link:nth-child(1) { transition-delay: 0.1s; }
+      .nav-cb:checked ~ .nav-bar .nav-links .nav-link:nth-child(2) { transition-delay: 0.15s; }
+      .nav-cb:checked ~ .nav-bar .nav-links .nav-link:nth-child(3) { transition-delay: 0.2s; }
+      .nav-cb:checked ~ .nav-bar .nav-links .nav-link:nth-child(4) { transition-delay: 0.25s; }
+      .nav-cb:checked ~ .nav-bar .nav-links .nav-link:nth-child(5) { transition-delay: 0.3s; }
+
+      .nav-cb:checked ~ .nav-bar .nav-burger::before {
+        content: "×";
+      }
+
+      .about-columns {
+        flex-direction: column;
+        gap: 48px;
+      }
+
+      .about-left, .about-right {
+        flex: 100%;
+        width: 100%;
+      }
+
+      .offer-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      }
+
+      .gallery-grid {
+        columns: 2;
+      }
+
+      .reviews-grid {
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      .review-card {
+        border-left: none;
+        border-bottom: 1px solid var(--border);
+        padding: 0 0 24px 0;
+      }
+
+      .review-card:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+
+      .review-card:first-child .review-gingham-corner {
+        left: 0;
+      }
+      .review-gingham-corner {
+        left: 0;
+      }
+
+      .contact-columns {
+        flex-direction: column;
+        gap: 48px;
+      }
+
+      .contact-left, .contact-right {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .gallery-grid {
+        columns: 1;
+      }
+
+      .offer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hidden checkbox for CSS-only Hamburger menu -->
+  <input type="checkbox" id="nav-open" class="nav-cb" />
+
+  <!-- Navigation sticky -->
+  <nav class="nav-bar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo-group">
+        <img class="nav-logo-img" src="https://i.ibb.co/C3L6dHfp/351206647-658458582771760-8748986535291365621-n.jpg" alt="Spiżarnia w Kratę Logo" referrerpolicy="no-referrer" />
+        <div class="nav-wordmark">
+          <span class="wordmark-gospoda">Gospoda</span>
+          <span class="wordmark-spizarnia">Spiżarnia</span>
+          <span class="wordmark-wkrate">w Kratę</span>
+        </div>
+      </a>
+      
+      <label for="nav-open" class="nav-burger"></label>
+      
+      <div class="nav-links">
+        <a href="#about" class="nav-link">O Nas</a>
+        <a href="#gallery" class="nav-link">Galeria</a>
+        <a href="#reviews" class="nav-link">Opinie</a>
+        <a href="#contact" class="nav-link">Kontakt</a>
+        <a href="tel:514461238" class="nav-btn-reserve">Rezerwuj</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-vertical-text">SWOŁOWO · KUCHNIA EKOLOGICZNA · SPIŻARNIA W KRATĘ</div>
+    <div class="hero-content">
+      <span class="hero-label">Swołowo 8 · Muzeum Kultury Ludowej Pomorza</span>
+      <div class="hero-divider">
+        <span class="hero-divider-line"></span>
+        <span class="hero-divider-star">✦</span>
+        <span class="hero-divider-line"></span>
+      </div>
+      
+      <div class="hero-title-block">
+        <span class="hero-title-gospoda">Gospoda</span>
+        <h1 class="hero-title-spizarnia">Spiżarnia</h1>
+        <span class="hero-title-wkrate">w Kratę</span>
+      </div>
+      
+      <p class="hero-desc">Ekologiczna, sezonowa, autorska kuchnia w sercu Muzeum Kultury Ludowej Pomorza w Swołowie.</p>
+      
+      <div class="hero-chips">
+        <span class="hero-chip">Kuchnia sezonowa</span>
+        <span class="hero-chip">Kuchnia pomorska</span>
+        <span class="hero-chip">Wt–Nd 12:00–18:00</span>
+      </div>
+      
+      <div class="hero-links">
+        <a href="#about" class="hero-link-primary">→ Poznaj nas</a>
+        <a href="#gallery" class="hero-link-secondary">→ Galeria</a>
+      </div>
+    </div>
+    <!-- Bottom Gingham Band -->
+    <div class="gingham-band gingham-pattern"></div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about-section border-divider">
+    <div class="container">
+      <div class="about-columns">
+        <div class="about-left">
+          <span class="section-label">O GOSPODZIE</span>
+          <div class="ornamental-divider">
+            <span class="divider-line"></span>
+            <span class="divider-star">✦</span>
+            <span class="divider-line"></span>
+          </div>
+          <h2 class="about-h2">Wyjątkowe nie tylko na talerzu.</h2>
+          <div class="about-red-rule"></div>
+          
+          <p class="about-body">Gospoda Spiżarnia w Kratę to absolutny klasyk kulinarnego szlaku Pomorza. Położona w malowniczym otoczeniu Muzeum Kultury Ludowej Pomorza w Swołowie, zachwyca nie tylko klimatem, ale przede wszystkim smakiem.</p>
+          <p class="about-body">Ekologiczna, sezonowa, autorska kuchnia najwyższej jakości. Gotujemy wyłącznie ze starannie wyselekcjonowanych składników, czerpiąc z tego, co aktualnie najlepsze w ogrodach.</p>
+          
+          <div class="about-features">
+            <div class="feature-row">
+              <div class="feature-left">
+                <span class="gingham-corner"></span>
+                <span class="feature-title">Kuchnia sezonowa</span>
+              </div>
+              <span class="feature-desc">menu zmienia się z porami roku</span>
+            </div>
+            <div class="feature-row">
+              <div class="feature-left">
+                <span class="gingham-corner"></span>
+                <span class="feature-title">Najwyższa jakość</span>
+              </div>
+              <span class="feature-desc">tylko starannie wyselekcjonowane składniki</span>
+            </div>
+            <div class="feature-row">
+              <div class="feature-left">
+                <span class="gingham-corner"></span>
+                <span class="feature-title">Tradycja</span>
+              </div>
+              <span class="feature-desc">regionalne receptury z pasją do dobrego jedzenia</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-right">
+          <div class="gingham-frame">
+            <img class="owners-photo" src="https://i.ibb.co/8L7k6KyV/480787051-519484844493949-3679599439792945745-n.jpg" alt="Właściciele Gospody Spiżarnia w Kratę" style="width: 100%; aspect-ratio: 4/5; object-fit: cover; display: block;" referrerpolicy="no-referrer" />
+          </div>
+          <div class="owners-caption">
+            <div class="caption-title">Ludzie z pasją, którzy tworzą to miejsce</div>
+            <div class="caption-subtitle">Gospoda Spiżarnia w Kratę · Swołowo</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gingham Band Separator -->
+  <div class="gingham-band gingham-pattern"></div>
+
+  <!-- Offer Section -->
+  <section class="offer-section border-divider">
+    <div class="container">
+      <span class="section-label">CO NAS WYRÓŻNIA</span>
+      <div class="ornamental-divider">
+        <span class="divider-line"></span>
+        <span class="divider-star">✦</span>
+        <span class="divider-line"></span>
+      </div>
+      <h2 class="offer-h2">Smak Pomorza na talerzu</h2>
+      <div class="offer-tagline">Sezonowo · Ekologicznie · Autorsko</div>
+      
+      <div class="offer-grid">
+        <div class="offer-card">
+          <span class="offer-card-corner gingham-corner"></span>
+          <h3 class="offer-title">Kuchnia sezonowa</h3>
+          <p class="offer-desc">Nasze menu zmienia się wraz z porami roku, czerpiąc z tego, co najlepsze aktualnie w ogrodach i na polach.</p>
+        </div>
+        
+        <div class="offer-card">
+          <span class="offer-card-corner gingham-corner"></span>
+          <h3 class="offer-title">Gęsina i regionalne smaki</h3>
+          <p class="offer-desc">Specjalnością domu jest gęsina na najwyższym poziomie — oraz inne dania kuchni pomorskiej.</p>
+        </div>
+        
+        <div class="offer-card">
+          <span class="offer-card-corner gingham-corner"></span>
+          <h3 class="offer-title">Klimat muzeum</h3>
+          <p class="offer-desc">Sielska aura wsi i Muzeum Kultury Ludowej Pomorza tworzy wyjątkową przestręń, której nie znajdziesz nigdzie indziej.</p>
+        </div>
+        
+        <div class="offer-card">
+          <span class="offer-card-corner gingham-corner"></span>
+          <h3 class="offer-title">Składniki z pasją</h3>
+          <p class="offer-desc">Gotujemy wyłącznie ze starannie wyselekcjonowanych składników — tradycja w nowoczesnym wydaniu.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section Expandable -->
+  <section id="gallery" class="gallery-section">
+    <div class="container">
+      <span class="section-label" style="color: var(--page);">GALERIA</span>
+      <div class="ornamental-divider">
+        <span class="divider-line" style="background-color: rgba(196, 30, 30, 0.6);"></span>
+        <span class="divider-star" style="color: rgba(196, 30, 30, 0.8);">✦</span>
+        <span class="divider-line" style="background-color: rgba(196, 30, 30, 0.6);"></span>
+      </div>
+      <h2 class="gallery-h2">Smak w obrazach</h2>
+      <div class="gallery-tagline">Ekologiczna kuchnia · Muzeum · Swołowo</div>
+      
+      <input type="checkbox" id="gallery-expand" class="gallery-cb" />
+      
+      <div class="gallery-grid">
+        <!-- 6 always visible images -->
+        <div class="gallery-item">
+          <img src="https://i.ibb.co/CpYs7g1y/518385858-632489559860143-5619092689708025217-n.jpg" alt="Tradycyjne polskie dania" loading="lazy" referrerpolicy="no-referrer" />
+        </div>
+        <div class="gallery-item">
+          <img src="https://i.ibb.co/hRFCzQ59/520233130-636278942814538-6804033297239222980-n.jpg" alt="Artystyczna prezentacja dań" loading="lazy" referrerpolicy="no-referrer" />
+        </div>
+        <div class="gallery-item">
+          <img src="https://i.ibb.co/93SKJGY2/525329463-642508528858246-2947173384704655995-n.jpg" alt="Pieczenie chleba i tradycje" loading="lazy" referrerpolicy="no-referrer" />
+        </div>
+        <div class="gallery-item">
+          <img src="https://i.ibb.co/vx50ptN6/540607993-669606256148473-5982740055577810450-n.jpg" alt="Wnętrze gospody" loading="lazy" referrerpolicy="no-referrer" />
+        </div>
+        <div class="gallery-item">
+          <img src="https://i.ibb.co/RTKj1Tz3/549976721-684206751355090-3762953296934314602-n.jpg" alt="Pyszna pomorska gęsina" loading="lazy" referrerpolicy="no-referrer" />
+        </div>
+        <div class="gallery-item">
+          <img src="https://i.ibb.co/F4bLDXH8/556789693-692919127150519-2834079349926052034-n.jpg" alt="Wyroby i spiżarnia" loading="lazy" referrerpolicy="no-referrer" />
+        </div>
+        
+        <!-- 7 hidden images -->
+        <div class="gallery-item gallery-extra">
+          <img src="https://i.ibb.co/TxY70GM5/629240517-795365776905853-1742439319043537696-n.jpg" alt="Sezonowe owoce i warzywa" loading="lazy" referrerpolicy="no-referrer" />
+        </div>
+        <div class="gallery-item gallery-extra">
+          <img src="https://i.ibb.co/6J1LCgm2/677817587-857687650673665-5595635680517375396-n.jpg" alt="Klimat Swołowa" loading="lazy" referrerpolicy="no-referrer" />
+        </div>
+        <div class="gallery-item gallery-extra">
+          <img src="https://i.ibb.co/PGkhWjhJ/675132081-857687767340320-6885225564905155776-n.jpg" alt="Tradycyjne ciasta i wypieki" loading="lazy" referrerpolicy="no-referrer" />
+        </div>
+        <div class="gallery-item gallery-extra">
+          <img src="https://i.ibb.co/mFypQXLn/675925795-857687860673644-6618768609935992970-n.jpg" alt="Gościnne stoły" loading="lazy" referrerpolicy="no-referrer" />
+        </div>
+        <div class="gallery-item gallery-extra">
+          <img src="https://i.ibb.co/RT8rzSzn/687150216-863949476714149-3377481115068332777-n.jpg" alt="Regionalne rarytasy" loading="lazy" referrerpolicy="no-referrer" />
+        </div>
+        <div class="gallery-item gallery-extra">
+          <img src="https://i.ibb.co/v6PBmbrg/685167891-863949583380805-7849476317956022514-n.jpg" alt="Swojskie przetwory" loading="lazy" referrerpolicy="no-referrer" />
+        </div>
+        <div class="gallery-item gallery-extra">
+          <img src="https://i.ibb.co/Nns6rSCY/687018749-863949653380798-4901710455769672629-n.jpg" alt="Klimatyczna wiejska kuchnia" loading="lazy" referrerpolicy="no-referrer" />
+        </div>
+      </div>
+      
+      <label for="gallery-expand" class="gallery-toggle">
+        <span class="toggle-more">Pokaż wszystkie ↓</span>
+        <span class="toggle-less">Zwiń ↑</span>
+      </label>
+    </div>
+  </section>
+
+  <!-- Gingham Band Separator -->
+  <div class="gingham-band gingham-pattern"></div>
+
+  <!-- Reviews Section -->
+  <section id="reviews" class="reviews-section border-divider">
+    <div class="container">
+      <span class="section-label">OPINIE GOŚCI</span>
+      <div class="ornamental-divider">
+        <span class="divider-line"></span>
+        <span class="divider-star">✦</span>
+        <span class="divider-line"></span>
+      </div>
+      <h2 class="reviews-h2">Co mówią goście</h2>
+      
+      <div class="reviews-grid">
+        <div class="review-card">
+          <span class="review-gingham-corner gingham-corner"></span>
+          <span class="review-quote-mark">“</span>
+          <p class="review-quote">Pyszne dania z pomorskiej gęsiny i nie tylko. Do tego ludzie z pasją, którzy tworzą to miejsce. Klimat wsi, wyśmienita strawa, niezwyczajni prowadzący. Polecam i sam często tam wracam.</p>
+          <div class="review-divider"></div>
+          <div class="review-stars">★★★★★</div>
+          <span class="review-author">— Gość Gospody</span>
+        </div>
+        
+        <div class="review-card">
+          <span class="review-gingham-corner gingham-corner"></span>
+          <span class="review-quote-mark">“</span>
+          <p class="review-quote">Gorąco polecam! Przepyszna regionalna kuchnia, bardzo miła obsługa oraz intrygujący klimat.</p>
+          <div class="review-divider"></div>
+          <div class="review-stars">★★★★★</div>
+          <span class="review-author">— Gość Gospody</span>
+        </div>
+        
+        <div class="review-card">
+          <span class="review-gingham-corner gingham-corner"></span>
+          <span class="review-quote-mark">“</span>
+          <p class="review-quote">Nawet nie wiem co napisać. Gęsina na tak wysokim poziomie, że trudno znaleźć słowa, które mogą to opisać. Polecam z pełną odpowiedzialnością.</p>
+          <div class="review-divider"></div>
+          <div class="review-stars">★★★★★</div>
+          <span class="review-author">— Gość Gospody</span>
+        </div>
+      </div>
+      
+      <a href="https://www.facebook.com/spizarniawkrate/reviews/?id=100092973125910&sk=reviews" target="_blank" rel="noopener noreferrer" class="reviews-more">WIĘCEJ OPINII NA FACEBOOKU →</a>
+    </div>
+  </section>
+
+  <!-- Hours Section -->
+  <section class="hours-section">
+    <!-- Gingham Band at top of Hours Section -->
+    <div class="gingham-band gingham-pattern"></div>
+    
+    <div class="container" style="padding: 60px 24px;">
+      <span class="section-label" style="color: var(--page);">GODZINY OTWARCIA</span>
+      <h2 class="hours-h2">Kiedy nas odwiedzić</h2>
+      <div class="hours-tagline">Od wtorku do niedzieli</div>
+      
+      <div class="hours-schedule">
+        <div class="hours-header">GOSPODA SPIŻARNIA W KRATĘ</div>
+        <div class="hours-row hours-closed">
+          <span class="hours-day">Poniedziałek</span>
+          <span class="hours-time closed-text">ZAMKNIĘTE</span>
+        </div>
+        <div class="hours-row">
+          <span class="hours-day">Wtorek</span>
+          <span class="hours-time">12:00 – 18:00</span>
+        </div>
+        <div class="hours-row">
+          <span class="hours-day">Środa</span>
+          <span class="hours-time">12:00 – 18:00</span>
+        </div>
+        <div class="hours-row">
+          <span class="hours-day">Czwartek</span>
+          <span class="hours-time">12:00 – 18:00</span>
+        </div>
+        <div class="hours-row">
+          <span class="hours-day">Piątek</span>
+          <span class="hours-time">12:00 – 18:00</span>
+        </div>
+        <div class="hours-row">
+          <span class="hours-day">Sobota</span>
+          <span class="hours-time">12:00 – 18:00</span>
+        </div>
+        <div class="hours-row">
+          <span class="hours-day">Niedziela</span>
+          <span class="hours-time">12:00 – 18:00</span>
+        </div>
+      </div>
+      
+      <p class="hours-note">Rezerwacje telefoniczne lub przez Facebooka.</p>
+    </div>
+    
+    <!-- Gingham Band at bottom of Hours Section -->
+    <div class="gingham-band gingham-pattern"></div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section border-divider">
+    <div class="container">
+      <span class="section-label">KONTAKT</span>
+      <div class="ornamental-divider">
+        <span class="divider-line"></span>
+        <span class="divider-star">✦</span>
+        <span class="divider-line"></span>
+      </div>
+      <h2 class="contact-h2">Znajdź nas w Swołowie.</h2>
+      
+      <div class="contact-columns">
+        <div class="contact-left">
+          <p class="contact-body">Gospoda mieści się w Swołowie 8, przy Muzeum Kultury Ludowej Pomorza. Zapraszamy od wtorku do niedzieli, od godziny 12:00 do 18:00.</p>
+          
+          <div class="contact-rows">
+            <div class="contact-row">
+              <div class="contact-label">TELEFON</div>
+              <div class="contact-value"><a href="tel:514461238" class="contact-phone-link">514 461 238</a></div>
+            </div>
+            
+            <div class="contact-row">
+              <div class="contact-label">E-MAIL</div>
+              <div class="contact-value"><a href="mailto:spizarniawkrateswolowo@gmail.com" class="contact-email-link">spizarniawkrateswolowo@gmail.com</a></div>
+            </div>
+            
+            <div class="contact-row">
+              <div class="contact-label">ADRES</div>
+              <div class="contact-value font-lato-val">Swołowo 8, 76-206</div>
+            </div>
+            
+            <div class="contact-row">
+              <div class="contact-label">FACEBOOK</div>
+              <div class="contact-value"><a href="https://www.facebook.com/spizarniawkrate/" target="_blank" rel="noopener noreferrer" class="contact-social-link">Spiżarnia w Kratę →</a></div>
+            </div>
+            
+            <div class="contact-row">
+              <div class="contact-label">INSTAGRAM</div>
+              <div class="contact-value"><a href="https://www.instagram.com/spizarniawkrate/" target="_blank" rel="noopener noreferrer" class="contact-social-link">spizarniawkrate →</a></div>
+            </div>
+          </div>
+          
+          <div class="contact-buttons">
+            <a href="tel:514461238" class="btn-cta-black">ZADZWOŃ: 514 461 238</a>
+            <a href="https://www.facebook.com/spizarniawkrate/" target="_blank" rel="noopener noreferrer" class="btn-cta-red">FACEBOOK / INSTAGRAM</a>
+          </div>
+        </div>
+        
+        <div class="contact-right">
+          <div class="map-frame">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2318.134892865689!2d16.836354712775595!3d54.47820178932229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fe2304a8bf83cd%3A0xb07caad3bf9b77c1!2sSpi%C5%BCarnia%20w%20Krat%C4%99%20-%20Gospoda%20Swo%C5%82owo!5e0!3m2!1spl!2spl!4v1783406467299!5m2!1spl!2spl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <!-- Gingham Band at very top of footer -->
+    <div class="gingham-band gingham-pattern" style="margin-bottom: 24px;"></div>
+    
+    <div class="container" style="padding: 24px 24px 0 24px;">
+      <img class="footer-logo" src="https://i.ibb.co/C3L6dHfp/351206647-658458582771760-8748986535291365621-n.jpg" alt="Logo Spiżarnia w Kratę" referrerpolicy="no-referrer" />
+      <span class="footer-spizarnia">Spiżarnia</span>
+      <span class="footer-wkrate">w Kratę</span>
+      
+      <div class="ornamental-divider" style="margin: 14px auto;">
+        <span class="divider-line"></span>
+        <span class="divider-star">✦</span>
+        <span class="divider-line"></span>
+      </div>
+      
+      <p class="footer-info">Swołowo 8 · 76-206 · 514 461 238 · spizarniawkrateswolowo@gmail.com</p>
+      <p class="footer-copyright">© 2026 Gospoda Spiżarnia w Kratę</p>
+    </div>
+  </footer>
+
+</body>
+</html>
